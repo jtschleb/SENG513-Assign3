@@ -1,0 +1,106 @@
+/*
+Jonathan Schlebach
+10112924
+Tutorial 6*/
+
+* {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body { 
+	font: 13px Helvetica, Arial; 
+	background: whitesmoke;
+}
+
+#maincontent {
+	min-height: 300px;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	flex-flow: row;
+}
+
+#users {
+	margin: 8px;
+	color: white;
+	float: left;
+}
+
+#chatframe {
+	margin: 4px;
+	height: 90vh;
+	padding: 5px;
+	border: 1px solid #000000;
+	border-radius: 7pt;
+	background: #6D6D6D;
+	flex: 3 1 70%;
+	order: 2;
+	word-wrap: normal;
+}
+
+/*Somehow needs to align with the enclosing flexbox, but that messes with the other stuff...*/
+#chatbox {
+	position: absolute;
+	bottom: 10vh;
+	overflow-y:auto;
+	max-height: 80%;
+}
+
+#messages {
+	list-style-type: none;
+	padding: 0px;
+	font-weight: bold;
+	color: white;
+	width: 68vw;
+}
+
+#messages li {
+	padding: 5px 5px;
+	color: white;
+}
+
+#userframe {
+	margin: 4px;
+	height: 90vh;
+	padding: 5px;
+	border: 1px solid #000000;
+	border-radius: 7pt;
+	background: #6D6D6D;
+	flex: 1 6 30%;
+	order: 3;
+}
+
+
+#userbox {
+	position: absolute;
+	bottom: 10vh;
+	overflow-y:auto;
+	max-height: 90%
+}
+
+form {
+
+	display: block;
+	margin: 4px;
+	padding: 5px;
+	min-height: 50px;
+	border: 1px solid #000000;
+	border-radius: 7pt;
+	background: #6D6D6D;
+}
+
+form input {
+	border: 0;
+	padding: 10px;
+	width: 90%;
+	margin-right: .5%;
+}
+
+form button {
+	width: 9%;
+	background: rgb(130, 224, 255);
+	border: none;
+	padding: 10px;
+}
